@@ -18,9 +18,9 @@ $result=$db->view_newest();
         <title>pasakas_MoS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="description" content="Elegant Accordion with jQuery and CSS3" />
+        <meta name="description" content="īsas noderīgi" />
         <meta name="keywords" content="pasaka"/>
-        <link rel="icon" href="../images/bio.png">
+        <link rel="icon" href="../images/favicon.ico">
         <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon">
@@ -34,7 +34,10 @@ $result=$db->view_newest();
         <div id="popupb">
         <div class="poptextb">
           <p>Uzmanību!!! Realitāte dažreiz mēdz būt reāli nepatīkama, reizēm neskaidra. Ieteikums palikt PasakāS.</p><br>
-          <div class="realty"><p>Nospiežot šo apliecinu, ka apzināti atgriežos realitātē.</p></div>
+          <div class="realty" onclick="hide('popDiv')">
+            <p>Nospiežot šo apliecinu, ka apzināti atgriežos realitātē.</p>
+          </div>
+
         </div>
         <div onClick="hide('popDiv')" class="popupCloseButton">&times;<a href="#" onClick="hide('popDiv')"></a></div>
         </div>

@@ -88,5 +88,25 @@ $(function(){
   });
   });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const targetUrl = "https://example.com/realitate"; // <- te ieliec savu adresi
+  const realty = document.querySelector("#popDiv .realty");
+
+  if (!realty) return;
+
+  realty.style.cursor = "pointer";
+
+  realty.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // 1) aizver popup
+    hide("popDiv");
+
+    // 2) atver citu lapu (ar mazu pauzi, lai aizvēršana vizuāli paspēj notikt)
+    setTimeout(() => {
+      window.location.href = targetUrl; // vai: window.location.assign(targetUrl)
+    }, 120);
+  });
+});
 
 
